@@ -8,7 +8,7 @@ An open protocol for deterministic, auditable AI-powered endurance coaching. Bui
 
 ## What Is This?
 
-**Section 11** is a structured framework that enables AI systems (ChatGPT, Claude, Gemini, etc.) to provide evidence-based endurance training advice with full auditability and deterministic reasoning.
+**Section 11** is a structured frameework that enables AI systems (ChatGPT, Claude, Gemini, etc.) to provide evidence-based endurance training advice with full auditability and deterministic reasoning.
 
 ### Core Principles
 
