@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-19T11:51:43.192196",
+    "last_updated": "2026-03-19T13:21:51.301042",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -46,10 +46,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 0.91,
-      "atl": 2.52,
-      "tsb": -1.61,
-      "ramp_rate": 0.35,
+      "ctl": 0.48,
+      "atl": 0.32,
+      "tsb": 0.16,
+      "ramp_rate": -0.09,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -184,18 +184,18 @@
     },
     "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 2,
+      "planned_days": 1,
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
-        "2026-03-18",
         "2026-03-19"
       ],
       "completed_dates": []
     },
-    "phase_detected": "Indeterminate",
+    "phase_detected": "Taper",
     "phase_triggers": [
-      "Insufficient data for phase detection"
+      "TSB 0.16 positive",
+      "CTL stable/declining"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
@@ -218,13 +218,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-19T11:51:43.191373",
+    "calculation_timestamp": "2026-03-19T13:21:51.300291",
     "data_quality": {
       "hrv_data_points": 4,
       "rhr_data_points": 4,
       "activities_7d": 0,
       "activities_28d": 3,
-      "planned_workouts_7d": 3,
+      "planned_workouts_7d": 2,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -352,11 +352,11 @@
       "date": "2026-03-19",
       "name": "Planned Workout",
       "type": "WORKOUT",
-      "planned_tss": 3,
-      "duration_hours": 0.05,
-      "duration_formatted": "3m",
+      "planned_tss": 19,
+      "duration_hours": 0.41,
+      "duration_formatted": "24m18s",
       "workout_summary": null,
-      "description": "\n- 3m Z2 HR"
+      "description": "- Run 1mi Z2 HR\n- Walk 5m\n- Run 1mi Z2 HR"
     },
     {
       "id": "event_2",
