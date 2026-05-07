@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-06T23:07:51.029839",
+    "last_updated": "2026-05-07T00:07:22.518597",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -33,7 +33,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-05-03",
-    "age_days": 3,
+    "age_days": 4,
     "total_months": 24,
     "history_confidence": "high"
   },
@@ -46,11 +46,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 2.54,
-      "atl": 0.07,
-      "tsb": 2.47,
-      "ramp_rate": -0.46,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "ctl": 3.12,
+      "atl": 3.3,
+      "tsb": -0.18,
+      "ramp_rate": 0.19,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": null,
@@ -96,10 +96,10 @@
   },
   "derived_metrics": {
     "recovery_index": null,
-    "hrv_baseline_7d": 54.5,
-    "rhr_baseline_7d": 54,
-    "hrv_baseline_28d": 64.6,
-    "rhr_baseline_28d": 52.4,
+    "hrv_baseline_7d": 49.0,
+    "rhr_baseline_7d": 55,
+    "hrv_baseline_28d": 61.7,
+    "rhr_baseline_28d": 52.8,
     "latest_hrv": null,
     "latest_rhr": null,
     "acwr": 0.0,
@@ -195,10 +195,9 @@
       ],
       "completed_dates": []
     },
-    "phase_detected": "Taper",
+    "phase_detected": "Indeterminate",
     "phase_triggers": [
-      "TSB 2.47 positive",
-      "CTL stable/declining"
+      "Insufficient data for phase detection"
     ],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
@@ -221,10 +220,10 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-06T23:07:51.029022",
+    "calculation_timestamp": "2026-05-07T00:07:22.517795",
     "data_quality": {
-      "hrv_data_points": 2,
-      "rhr_data_points": 2,
+      "hrv_data_points": 1,
+      "rhr_data_points": 1,
       "activities_7d": 0,
       "activities_28d": 1,
       "planned_workouts_7d": 4,
@@ -236,22 +235,6 @@
   },
   "recent_activities": [],
   "wellness_data": [
-    {
-      "date": "2026-04-30",
-      "weight_kg": null,
-      "resting_hr": 53,
-      "hrv_rmssd": 60.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 8.23,
-      "sleep_formatted": "8h14m",
-      "sleep_quality": 2,
-      "sleep_score": 82.0,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-05-01",
       "weight_kg": null,
@@ -347,22 +330,27 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-05-07",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
     {
       "id": "event_1",
-      "date": "2026-05-06",
-      "name": "Planned Workout",
-      "type": "WORKOUT",
-      "planned_tss": 28,
-      "duration_hours": 0.48,
-      "duration_formatted": "28m58s",
-      "workout_summary": null,
-      "description": "- Run 3mi Z2 HR"
-    },
-    {
-      "id": "event_2",
       "date": "2026-05-08",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -373,7 +361,7 @@
       "description": "- Run 3mi Z2 HR"
     },
     {
-      "id": "event_3",
+      "id": "event_2",
       "date": "2026-05-10",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -384,7 +372,7 @@
       "description": "- Run 3mi Z2 HR"
     },
     {
-      "id": "event_4",
+      "id": "event_3",
       "date": "2026-05-11",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -395,7 +383,7 @@
       "description": "- 4mi Z2 HR"
     },
     {
-      "id": "event_5",
+      "id": "event_4",
       "date": "2026-05-13",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -406,7 +394,7 @@
       "description": "- Run 2mi Z2 HR\n- Walk 3m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_6",
+      "id": "event_5",
       "date": "2026-05-15",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -417,7 +405,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 3m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_7",
+      "id": "event_6",
       "date": "2026-05-17",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -428,7 +416,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 3m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_8",
+      "id": "event_7",
       "date": "2026-05-18",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -439,7 +427,7 @@
       "description_preview": "- 6mi Z2 HR"
     },
     {
-      "id": "event_9",
+      "id": "event_8",
       "date": "2026-05-20",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -450,7 +438,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 2m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_10",
+      "id": "event_9",
       "date": "2026-05-22",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -461,7 +449,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 2m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_11",
+      "id": "event_10",
       "date": "2026-05-24",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -472,7 +460,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 2m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_12",
+      "id": "event_11",
       "date": "2026-05-25",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -483,7 +471,7 @@
       "description_preview": "- 7mi Z2 HR"
     },
     {
-      "id": "event_13",
+      "id": "event_12",
       "date": "2026-05-27",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -494,7 +482,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 1m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_14",
+      "id": "event_13",
       "date": "2026-05-29",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -505,7 +493,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 1m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_15",
+      "id": "event_14",
       "date": "2026-05-31",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -516,7 +504,7 @@
       "description_preview": "- Run 2mi Z2 HR\n- Walk 1m\n- Run 2mi Z2 HR"
     },
     {
-      "id": "event_16",
+      "id": "event_15",
       "date": "2026-06-01",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -527,7 +515,7 @@
       "description_preview": "- 7mi Z2 HR"
     },
     {
-      "id": "event_17",
+      "id": "event_16",
       "date": "2026-06-03",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -538,7 +526,7 @@
       "description_preview": "- Run 4mi Z2 HR"
     },
     {
-      "id": "event_18",
+      "id": "event_17",
       "date": "2026-06-05",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -549,7 +537,7 @@
       "description_preview": "- Run 4mi Z2 HR"
     },
     {
-      "id": "event_19",
+      "id": "event_18",
       "date": "2026-06-07",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -560,7 +548,7 @@
       "description_preview": "- Run 3mi Z2 HR"
     },
     {
-      "id": "event_20",
+      "id": "event_19",
       "date": "2026-06-08",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -571,7 +559,7 @@
       "description_preview": "- 4mi Z2 HR"
     },
     {
-      "id": "event_21",
+      "id": "event_20",
       "date": "2026-06-10",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -582,7 +570,7 @@
       "description_preview": "- Run 4mi Z2 HR"
     },
     {
-      "id": "event_22",
+      "id": "event_21",
       "date": "2026-06-12",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -593,7 +581,7 @@
       "description_preview": "- Run 4mi Z2 HR"
     },
     {
-      "id": "event_23",
+      "id": "event_22",
       "date": "2026-06-14",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -604,7 +592,7 @@
       "description_preview": "- Run 3mi Z2 HR"
     },
     {
-      "id": "event_24",
+      "id": "event_23",
       "date": "2026-06-15",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -615,7 +603,7 @@
       "description_preview": "- 8mi Z2 HR"
     },
     {
-      "id": "event_25",
+      "id": "event_24",
       "date": "2026-06-17",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -627,20 +615,20 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 25,
+    "attempted": 24,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 25
+    "bail_no_match": 24
   },
   "weekly_summary": {
     "total_training_hours": 0.0,
     "total_training_formatted": "0s",
     "total_tss": 0,
     "activities_count": 0,
-    "avg_hrv": 54.5,
-    "avg_resting_hr": 54.0
+    "avg_hrv": 49.0,
+    "avg_resting_hr": 55.0
   },
   "race_calendar": {
     "next_race": null,
