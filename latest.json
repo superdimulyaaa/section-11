@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-12T23:43:14.225554",
+    "last_updated": "2026-05-13T01:31:28.799000",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -23,7 +23,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-05-03",
-    "age_days": 9,
+    "age_days": 10,
     "total_months": 24,
     "history_confidence": "high"
   },
@@ -36,11 +36,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 2.2,
+      "ctl": 2.15,
       "atl": 0.03,
-      "tsb": 2.17,
-      "ramp_rate": -0.4,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "tsb": 2.12,
+      "ramp_rate": -0.39,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
@@ -178,16 +178,16 @@
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
-        "2026-05-06",
         "2026-05-08",
         "2026-05-10",
-        "2026-05-11"
+        "2026-05-11",
+        "2026-05-13"
       ],
       "completed_dates": []
     },
     "phase_detected": "Taper",
     "phase_triggers": [
-      "TSB 2.17 positive",
+      "TSB 2.12 positive",
       "CTL stable/declining"
     ],
     "seasonal_context": "Build / Early Race Season",
@@ -211,7 +211,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-12T23:43:14.224653",
+    "calculation_timestamp": "2026-05-13T01:31:28.798255",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
@@ -226,22 +226,6 @@
   },
   "recent_activities": [],
   "wellness_data": [
-    {
-      "date": "2026-05-06",
-      "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-05-07",
       "weight_kg": null,
@@ -337,6 +321,22 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-05-13",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
@@ -393,7 +393,7 @@
       "duration_hours": 0.68,
       "duration_formatted": "40m38s",
       "workout_summary": null,
-      "description_preview": "- Run 2mi Z2 HR\n- Walk 2m\n- Run 2mi Z2 HR"
+      "description": "- Run 2mi Z2 HR\n- Walk 2m\n- Run 2mi Z2 HR"
     },
     {
       "id": "event_6",
@@ -603,15 +603,26 @@
       "duration_formatted": "1h17m15s",
       "workout_summary": null,
       "description_preview": "- 8mi Z2 HR"
+    },
+    {
+      "id": "event_25",
+      "date": "2026-06-24",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 37,
+      "duration_hours": 0.64,
+      "duration_formatted": "38m37s",
+      "workout_summary": null,
+      "description_preview": "- Run 4mi Z2 HR"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 24,
+    "attempted": 25,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 24
+    "bail_no_match": 25
   },
   "weekly_summary": {
     "total_training_hours": 0.0,
