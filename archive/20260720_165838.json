@@ -1,0 +1,693 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "DO NOT calculate totals from individual activities. Use the pre-calculated values in 'summary', 'weekly_summary', and 'derived_metrics' sections below. These are already computed accurately from the API data.",
+    "display_formatting": "For durations and sleep, always display the '_formatted' fields (e.g., sleep_formatted, duration_formatted, total_training_formatted) instead of converting decimal '_hours' values. The formatted fields are pre-calculated from raw seconds and avoid rounding errors.",
+    "data_period": "Last 7 days (including today)",
+    "extended_data_note": "ACWR and baselines calculated from 28 days of data",
+    "capability_metrics_note": "The 'capability' block in derived_metrics contains durability trend (aggregate decoupling 7d/28d), efficiency factor trend (aggregate EF 7d/28d), and TID comparison (7d vs 28d distribution drift). These measure HOW the athlete expresses fitness, not just load. Use these for coaching context alongside traditional load metrics. Durability and EF trend direction matters more than absolute values.",
+    "quick_stats": {
+      "total_training_hours": 0.58,
+      "total_training_formatted": "35m",
+      "total_activities": 2,
+      "total_tss": 30
+    }
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-07-20T15:17:35.825354",
+    "data_range_days": 7,
+    "extended_range_days": 28,
+    "version": "3.6.4"
+  },
+  "alerts": [
+    {
+      "metric": "acwr",
+      "value": 2.11,
+      "severity": "alarm",
+      "threshold": "0.75 / 1.35",
+      "context": "ACWR 2.11 outside safe range. Injury/overreach risk elevated.",
+      "persistence_days": null,
+      "tier": 2
+    }
+  ],
+  "history": {
+    "available": true,
+    "last_generated": "2026-07-12",
+    "age_days": 8,
+    "total_months": 27,
+    "history_confidence": "high"
+  },
+  "summary": {
+    "period_description": "Last 7 days of training (including today)",
+    "note": "Duration calculated from API moving_time field.",
+    "total_duration_decimal_hours": 0.58,
+    "total_activities": 2,
+    "by_activity_type": {
+      "Ride": {
+        "duration_decimal_hours": 0.17,
+        "count": 1,
+        "tss": 3,
+        "distance_km": 3.1
+      },
+      "Run": {
+        "duration_decimal_hours": 0.41,
+        "count": 1,
+        "tss": 27,
+        "distance_km": 2.3
+      }
+    }
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 2.84,
+      "atl": 5.42,
+      "tsb": -2.58,
+      "ramp_rate": 0.75,
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+    },
+    "thresholds": {
+      "eftp": null,
+      "w_prime": null,
+      "w_prime_kj": null,
+      "p_max": null,
+      "vo2max": null,
+      "sports": {
+        "cycling": {
+          "lthr": 177,
+          "max_hr": 195,
+          "threshold_pace": null,
+          "pace_units": null,
+          "ftp": 250,
+          "ftp_indoor": null
+        },
+        "run": {
+          "lthr": 149,
+          "max_hr": 191,
+          "threshold_pace": null,
+          "pace_units": null,
+          "ftp": null,
+          "ftp_indoor": null
+        },
+        "swim": {
+          "lthr": 177,
+          "max_hr": 195,
+          "threshold_pace": 0.8333333,
+          "pace_units": "SECS_100M",
+          "ftp": null,
+          "ftp_indoor": null
+        }
+      }
+    },
+    "current_metrics": {
+      "weight_kg": 100.0,
+      "resting_hr": 50,
+      "hrv": null,
+      "sleep_quality": null,
+      "sleep_hours": null,
+      "sleep_formatted": null
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": null,
+    "hrv_baseline_7d": 67.0,
+    "rhr_baseline_7d": 50,
+    "hrv_baseline_28d": 64.8,
+    "rhr_baseline_28d": 51.1,
+    "latest_hrv": null,
+    "latest_rhr": null,
+    "acwr": 2.11,
+    "acwr_interpretation": "danger",
+    "monotony": 0.43,
+    "monotony_interpretation": "normal",
+    "primary_sport": "run",
+    "primary_sport_monotony": null,
+    "primary_sport_tss_7d": 27.0,
+    "effective_monotony": 0.43,
+    "multi_sport_detected": true,
+    "strain": 13.0,
+    "stress_tolerance": 0.3,
+    "load_recovery_ratio": null,
+    "tss_7d_total": 30.0,
+    "tss_28d_total": 57.0,
+    "zone_distribution_7d": {
+      "z1_hours": 0.27,
+      "z2_hours": 0.14,
+      "z3_hours": 0.15,
+      "z4_plus_hours": 0.02,
+      "total_hours": 0.58
+    },
+    "grey_zone_percentage": 25.5,
+    "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
+    "quality_intensity_percentage": 3.2,
+    "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
+    "polarisation_index": 0.71,
+    "polarisation_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
+    "hard_days_this_week": 0,
+    "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
+    "seiler_tid_7d": {
+      "z1_seconds": 1482,
+      "z2_seconds": 531,
+      "z3_seconds": 66,
+      "z1_pct": 71.3,
+      "z2_pct": 25.5,
+      "z3_pct": 3.2,
+      "polarization_index": null,
+      "classification": "Pyramidal"
+    },
+    "seiler_tid_7d_primary": {
+      "z1_seconds": 861,
+      "z2_seconds": 531,
+      "z3_seconds": 66,
+      "z1_pct": 59.1,
+      "z2_pct": 36.4,
+      "z3_pct": 4.5,
+      "polarization_index": null,
+      "classification": "Pyramidal",
+      "sport": "run"
+    },
+    "seiler_tid_28d": {
+      "z1_seconds": 4586,
+      "z2_seconds": 531,
+      "z3_seconds": 66,
+      "z1_pct": 88.5,
+      "z2_pct": 10.2,
+      "z3_pct": 1.3,
+      "polarization_index": null,
+      "classification": "Pyramidal"
+    },
+    "seiler_tid_28d_primary": {
+      "z1_seconds": 861,
+      "z2_seconds": 531,
+      "z3_seconds": 66,
+      "z1_pct": 59.1,
+      "z2_pct": 36.4,
+      "z3_pct": 4.5,
+      "polarization_index": null,
+      "classification": "Pyramidal",
+      "sport": "run"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": null,
+        "high_drift_count_7d": 0,
+        "high_drift_count_28d": 0,
+        "qualifying_sessions_7d": 0,
+        "qualifying_sessions_28d": 0,
+        "trend": null,
+        "note": "Steady-state power sessions only (VI <= 1.05, VI > 0, >= 90min, power data). Negative decoupling = strong durability. Trend compares 7d vs 28d mean (+/-1% = stable)."
+      },
+      "efficiency_factor": {
+        "mean_ef_7d": null,
+        "mean_ef_28d": null,
+        "qualifying_sessions_7d": 0,
+        "qualifying_sessions_28d": 0,
+        "trend": null,
+        "note": "Steady-state cycling sessions only (VI <= 1.05, VI > 0, >= 20min, power+HR data). Rising EF = improving aerobic efficiency. Compare like-for-like sessions only \u2014 EF varies with intensity. Trend compares 7d vs 28d mean (+/-0.03 = stable)."
+      },
+      "tid_comparison": {
+        "classification_7d": "Pyramidal",
+        "classification_28d": "Pyramidal",
+        "pi_7d": null,
+        "pi_28d": null,
+        "pi_delta": null,
+        "drift": "consistent",
+        "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
+      }
+    },
+    "consistency_index": 0.5,
+    "consistency_details": {
+      "planned_days": 2,
+      "completed_days": 1,
+      "matched_days": 1,
+      "planned_dates": [
+        "2026-07-15",
+        "2026-07-19"
+      ],
+      "completed_dates": [
+        "2026-07-15"
+      ]
+    },
+    "phase_detected": "Indeterminate",
+    "phase_triggers": [
+      "Insufficient data for phase detection"
+    ],
+    "seasonal_context": "Peak Race Season",
+    "benchmark_indoor": {
+      "current_ftp": null,
+      "ftp_8_weeks_ago": null,
+      "benchmark_index": null,
+      "benchmark_percentage": null,
+      "seasonal_expected": null
+    },
+    "benchmark_outdoor": {
+      "current_ftp": 250,
+      "ftp_8_weeks_ago": null,
+      "benchmark_index": null,
+      "benchmark_percentage": null,
+      "seasonal_expected": null
+    },
+    "eftp": null,
+    "w_prime": null,
+    "w_prime_kj": null,
+    "p_max": null,
+    "power_model_source": "wellness.sportInfo",
+    "vo2max": null,
+    "calculation_timestamp": "2026-07-20T15:17:35.824586",
+    "data_quality": {
+      "hrv_data_points": 1,
+      "rhr_data_points": 1,
+      "activities_7d": 2,
+      "activities_28d": 3,
+      "planned_workouts_7d": 2,
+      "ftp_history_days": {
+        "indoor": 0,
+        "outdoor": 0
+      }
+    }
+  },
+  "recent_activities": [
+    {
+      "id": "activity_1",
+      "date": "2026-07-19T20:41:25",
+      "type": "Run",
+      "name": "Training Session",
+      "duration_hours": 0.41,
+      "distance_km": 2.32,
+      "tss": 27,
+      "intensity_factor": 80.57906,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 129,
+      "max_hr": 165,
+      "avg_cadence": 66.49521,
+      "avg_speed": 5.6,
+      "max_speed": 9.3,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": 241,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "elevation_m": 7.3033752,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 347,
+          "z2_time": 514,
+          "z3_time": 531,
+          "z4_time": 66,
+          "z5_time": 0
+        }
+      }
+    },
+    {
+      "id": "activity_2",
+      "date": "2026-07-15T15:04:38",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 0.17,
+      "distance_km": 3.05,
+      "tss": 3,
+      "intensity_factor": 32.619617,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 100,
+      "max_hr": 116,
+      "avg_cadence": null,
+      "avg_speed": 10.8,
+      "max_speed": 24.2,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": 104,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "elevation_m": 7.8000183,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 621,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-07-14",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    },
+    {
+      "date": "2026-07-15",
+      "weight_kg": null,
+      "resting_hr": 50,
+      "hrv_rmssd": 67.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 7.7,
+      "sleep_formatted": "7h42m",
+      "sleep_quality": 3,
+      "sleep_score": 75.0,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    },
+    {
+      "date": "2026-07-16",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    },
+    {
+      "date": "2026-07-17",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    },
+    {
+      "date": "2026-07-18",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    },
+    {
+      "date": "2026-07-19",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    },
+    {
+      "date": "2026-07-20",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
+    }
+  ],
+  "planned_workouts": [
+    {
+      "id": "event_1",
+      "date": "2026-07-21",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 17,
+      "duration_hours": 0.42,
+      "duration_formatted": "25m",
+      "workout_summary": "5m | 8\u00d71m / 1m30s rec",
+      "description": "# Description\nBrisk five-minute warmup walk. Then alternate 60 seconds of jogging and 90 seconds of walking for a total of 20 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n8x\n- Jog 1m Z2 HR\n- Walk 90s Z1 HR"
+    },
+    {
+      "id": "event_2",
+      "date": "2026-07-24",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 17,
+      "duration_hours": 0.42,
+      "duration_formatted": "25m",
+      "workout_summary": "5m | 8\u00d71m / 1m30s rec",
+      "description": "# Description\nBrisk five-minute warmup walk. Then alternate 60 seconds of jogging and 90 seconds of walking for a total of 20 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n8x\n- Jog 1m Z2 HR\n- Walk 90s Z1 HR"
+    },
+    {
+      "id": "event_3",
+      "date": "2026-07-26",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 18,
+      "duration_hours": 0.43,
+      "duration_formatted": "26m",
+      "workout_summary": "5m | 6\u00d71m30s / 2m rec",
+      "description": "# Description\n\nBrisk five-minute warmup walk. Then alternate 90 seconds of jogging and two minutes of walking for a total of 20 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n6x\n- Jog 90s Z2 HR\n- Walk 2m Z1 HR"
+    },
+    {
+      "id": "event_4",
+      "date": "2026-07-28",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 18,
+      "duration_hours": 0.43,
+      "duration_formatted": "26m",
+      "workout_summary": "5m | 6\u00d71m30s / 2m rec"
+    },
+    {
+      "id": "event_5",
+      "date": "2026-07-31",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 18,
+      "duration_hours": 0.43,
+      "duration_formatted": "26m",
+      "workout_summary": "5m | 6\u00d71m30s / 2m rec"
+    },
+    {
+      "id": "event_6",
+      "date": "2026-08-02",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 16,
+      "duration_hours": 0.38,
+      "duration_formatted": "23m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then do two repetitions of the following:\n- Jog 90 Seconds"
+    },
+    {
+      "id": "event_7",
+      "date": "2026-08-04",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 16,
+      "duration_hours": 0.38,
+      "duration_formatted": "23m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then do two repetitions of the following:\n- Jog 90 Seconds"
+    },
+    {
+      "id": "event_8",
+      "date": "2026-08-07",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 16,
+      "duration_hours": 0.38,
+      "duration_formatted": "23m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then do two repetitions of the following:\n- Jog 90 Seconds"
+    },
+    {
+      "id": "event_9",
+      "date": "2026-08-09",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 21,
+      "duration_hours": 0.44,
+      "duration_formatted": "26m30s",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 3 minutes"
+    },
+    {
+      "id": "event_10",
+      "date": "2026-08-11",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 21,
+      "duration_hours": 0.44,
+      "duration_formatted": "26m30s",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 3 minutes"
+    },
+    {
+      "id": "event_11",
+      "date": "2026-08-14",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 21,
+      "duration_hours": 0.44,
+      "duration_formatted": "26m30s",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 3 minutes"
+    },
+    {
+      "id": "event_12",
+      "date": "2026-08-16",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 21,
+      "duration_hours": 0.43,
+      "duration_formatted": "26m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 5 minutes"
+    },
+    {
+      "id": "event_13",
+      "date": "2026-08-18",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 20,
+      "duration_hours": 0.4,
+      "duration_formatted": "24m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 8 minutes"
+    },
+    {
+      "id": "event_14",
+      "date": "2026-08-21",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 22,
+      "duration_hours": 0.42,
+      "duration_formatted": "25m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog for 20 minutes with no walking.\n# Steps"
+    },
+    {
+      "id": "event_15",
+      "date": "2026-08-23",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 24,
+      "duration_hours": 0.48,
+      "duration_formatted": "29m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 5 minutes"
+    },
+    {
+      "id": "event_16",
+      "date": "2026-08-25",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 24,
+      "duration_hours": 0.47,
+      "duration_formatted": "28m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 10 minutes"
+    },
+    {
+      "id": "event_17",
+      "date": "2026-08-28",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 27,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
+    },
+    {
+      "id": "event_18",
+      "date": "2026-08-30",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 27,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
+    }
+  ],
+  "workout_summary_stats": {
+    "attempted": 18,
+    "success": 5,
+    "patternA": 5,
+    "patternB": 0,
+    "bail_no_workout_doc": 0,
+    "bail_no_match": 13
+  },
+  "weekly_summary": {
+    "total_training_hours": 0.58,
+    "total_training_formatted": "35m",
+    "total_tss": 30,
+    "activities_count": 2,
+    "avg_hrv": 67.0,
+    "avg_resting_hr": 50.0
+  },
+  "race_calendar": {
+    "next_race": null,
+    "all_races": [],
+    "taper_alert": {
+      "active": false
+    },
+    "race_week": {
+      "active": false
+    }
+  }
+}
