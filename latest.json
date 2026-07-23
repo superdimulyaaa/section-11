@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-07-23T19:34:43.512650",
+    "last_updated": "2026-07-23T20:43:38.083010",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -245,7 +245,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-07-23T19:34:43.511916",
+    "calculation_timestamp": "2026-07-23T20:43:38.082292",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
@@ -481,7 +481,7 @@
     },
     {
       "id": "event_3",
-      "date": "2026-07-28",
+      "date": "2026-07-27",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 18,
@@ -492,17 +492,18 @@
     },
     {
       "id": "event_4",
-      "date": "2026-07-31",
+      "date": "2026-07-29",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 18,
       "duration_hours": 0.43,
       "duration_formatted": "26m",
-      "workout_summary": "5m | 6\u00d71m30s / 2m rec"
+      "workout_summary": "5m | 6\u00d71m30s / 2m rec",
+      "description": "# Description\n\nBrisk five-minute warmup walk. Then alternate 90 seconds of jogging and two minutes of walking for a total of 20 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n6x\n- Jog 90s Z2 HR\n- Walk 2m Z1 HR"
     },
     {
       "id": "event_5",
-      "date": "2026-08-02",
+      "date": "2026-07-31",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 16,
