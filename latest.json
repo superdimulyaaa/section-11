@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-09T00:04:36.278588",
+    "last_updated": "2026-08-09T02:30:17.490418",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -33,7 +33,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-07-12",
-    "age_days": 27,
+    "age_days": 28,
     "total_months": 27,
     "history_confidence": "high"
   },
@@ -46,10 +46,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 2.65,
-      "atl": 2.39,
-      "tsb": 0.26,
-      "ramp_rate": -0.06,
+      "ctl": 2.29,
+      "atl": 0.79,
+      "tsb": 1.5,
+      "ramp_rate": -0.42,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -196,7 +196,7 @@
     },
     "phase_detected": "Taper",
     "phase_triggers": [
-      "TSB 0.26 positive",
+      "TSB 1.5 positive",
       "CTL stable/declining"
     ],
     "seasonal_context": "Peak Race Season",
@@ -220,7 +220,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-09T00:04:36.277840",
+    "calculation_timestamp": "2026-08-09T02:30:17.489692",
     "data_quality": {
       "hrv_data_points": 1,
       "rhr_data_points": 1,
