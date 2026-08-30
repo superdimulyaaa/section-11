@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-29T23:32:46.523938",
+    "last_updated": "2026-08-30T01:43:35.852354",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -23,7 +23,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-07-12",
-    "age_days": 48,
+    "age_days": 49,
     "total_months": 27,
     "history_confidence": "high"
   },
@@ -36,11 +36,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 2.04,
-      "atl": 3.16,
-      "tsb": -1.12,
-      "ramp_rate": 0.36,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 1.39,
+      "atl": 0.04,
+      "tsb": 1.35,
+      "ramp_rate": -0.25,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
@@ -88,8 +88,8 @@
     "recovery_index": null,
     "hrv_baseline_7d": null,
     "rhr_baseline_7d": null,
-    "hrv_baseline_28d": 50.3,
-    "rhr_baseline_28d": 49.3,
+    "hrv_baseline_28d": 44.0,
+    "rhr_baseline_28d": 50,
     "latest_hrv": null,
     "latest_rhr": null,
     "acwr": null,
@@ -178,15 +178,16 @@
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
-        "2026-08-23",
         "2026-08-25",
-        "2026-08-28"
+        "2026-08-28",
+        "2026-08-30"
       ],
       "completed_dates": []
     },
-    "phase_detected": "Indeterminate",
+    "phase_detected": "Taper",
     "phase_triggers": [
-      "Insufficient data for phase detection"
+      "TSB 1.35 positive",
+      "CTL stable/declining"
     ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
@@ -209,7 +210,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-29T23:32:46.523170",
+    "calculation_timestamp": "2026-08-30T01:43:35.851573",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
@@ -224,22 +225,6 @@
   },
   "recent_activities": [],
   "wellness_data": [
-    {
-      "date": "2026-08-23",
-      "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-08-24",
       "weight_kg": null,
@@ -335,6 +320,22 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-08-30",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
@@ -380,7 +381,7 @@
       "duration_hours": 0.55,
       "duration_formatted": "33m",
       "workout_summary": null,
-      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
+      "description": "# Description\n\nBrisk five-minute warmup walk, then jog 28 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 28m Z2 HR\n\n"
     },
     {
       "id": "event_5",
