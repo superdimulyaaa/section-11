@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-28T21:23:13.199225",
+    "last_updated": "2026-09-29T01:11:35.910170",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -33,7 +33,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-09-07",
-    "age_days": 21,
+    "age_days": 22,
     "total_months": 28,
     "history_confidence": "high"
   },
@@ -53,11 +53,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 1.32,
-      "atl": 3.12,
-      "tsb": -1.8,
-      "ramp_rate": 0.49,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 1.06,
+      "atl": 1.7,
+      "tsb": -0.64,
+      "ramp_rate": 0.26,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
@@ -211,11 +211,12 @@
     },
     "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 1,
+      "planned_days": 2,
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
-        "2026-09-27"
+        "2026-09-27",
+        "2026-09-29"
       ],
       "completed_dates": []
     },
@@ -244,13 +245,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-28T21:23:13.198429",
+    "calculation_timestamp": "2026-09-29T01:11:35.909547",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 1,
       "activities_7d": 1,
       "activities_28d": 1,
-      "planned_workouts_7d": 1,
+      "planned_workouts_7d": 2,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -301,22 +302,6 @@
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-09-22",
-      "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-09-23",
       "weight_kg": null,
@@ -412,6 +397,22 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-09-29",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
@@ -456,7 +457,8 @@
       "planned_tss": 11,
       "duration_hours": 0.43,
       "duration_formatted": "26m",
-      "workout_summary": "5m | 6\u00d71m30s / 2m rec"
+      "workout_summary": "5m | 6\u00d71m30s / 2m rec",
+      "description": "# Description\n\nBrisk five-minute warmup walk. Then alternate 90 seconds of jogging and two minutes of walking for a total of 20 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n6x\n- Jog 90s Z2 HR\n- Walk 2m Z1 HR"
     },
     {
       "id": "event_5",
@@ -610,15 +612,26 @@
       "duration_formatted": "30m",
       "workout_summary": null,
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
+    },
+    {
+      "id": "event_19",
+      "date": "2026-11-10",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 20,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 18,
+    "attempted": 19,
     "success": 5,
     "patternA": 5,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 13
+    "bail_no_match": 14
   },
   "weekly_summary": {
     "total_training_hours": 0.37,
