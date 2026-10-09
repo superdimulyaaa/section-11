@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-08T23:54:53.895137",
+    "last_updated": "2026-10-09T05:40:42.573454",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -33,7 +33,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-09-07",
-    "age_days": 31,
+    "age_days": 32,
     "total_months": 28,
     "history_confidence": "high"
   },
@@ -59,11 +59,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 2.32,
-      "atl": 5.24,
-      "tsb": -2.92,
-      "ramp_rate": 0.76,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 2.26,
+      "atl": 4.55,
+      "tsb": -2.29,
+      "ramp_rate": 0.74,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
@@ -215,14 +215,15 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.5,
+    "consistency_index": 0.33,
     "consistency_details": {
-      "planned_days": 2,
+      "planned_days": 3,
       "completed_days": 1,
       "matched_days": 1,
       "planned_dates": [
         "2026-10-04",
-        "2026-10-06"
+        "2026-10-06",
+        "2026-10-09"
       ],
       "completed_dates": [
         "2026-10-04"
@@ -253,13 +254,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-08T23:54:53.894346",
+    "calculation_timestamp": "2026-10-09T05:40:42.572912",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
       "activities_7d": 3,
       "activities_28d": 6,
-      "planned_workouts_7d": 2,
+      "planned_workouts_7d": 3,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -395,22 +396,6 @@
   ],
   "wellness_data": [
     {
-      "date": "2026-10-02",
-      "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
-    {
       "date": "2026-10-03",
       "weight_kg": null,
       "resting_hr": null,
@@ -505,6 +490,22 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-10-09",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
@@ -550,7 +551,7 @@
       "duration_hours": 0.38,
       "duration_formatted": "23m",
       "workout_summary": null,
-      "description_preview": "# Description\nBrisk five-minute warmup walk, then do two repetitions of the following:\n- Jog 90 Seconds"
+      "description": "# Description\n\nBrisk five-minute warmup walk, then do two repetitions of the following:\n\n- Jog 90 Seconds\n- Walk 90 Seconds\n- Jog 3 Minutes\n- Walk 3 Minutes\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n2x\n- Jog 90s Z2 HR\n- Walk 90s Z1 HR\n- Jog 3m Z2 HR\n- Walk 3m Z1 HR"
     },
     {
       "id": "event_5",
@@ -705,15 +706,26 @@
       "duration_formatted": "33m",
       "workout_summary": null,
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
+    },
+    {
+      "id": "event_19",
+      "date": "2026-11-20",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 22,
+      "duration_hours": 0.55,
+      "duration_formatted": "33m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 18,
+    "attempted": 19,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 17
+    "bail_no_match": 18
   },
   "weekly_summary": {
     "total_training_hours": 1.82,
