@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-10-14T22:42:02.199321",
+    "last_updated": "2026-10-15T00:57:14.635523",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -33,7 +33,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-09-07",
-    "age_days": 37,
+    "age_days": 38,
     "total_months": 28,
     "history_confidence": "high"
   },
@@ -53,9 +53,9 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 2.74,
-      "atl": 6.35,
-      "tsb": -3.61,
+      "ctl": 2.68,
+      "atl": 5.51,
+      "tsb": -2.83,
       "ramp_rate": 0.36,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
@@ -246,7 +246,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-10-14T22:42:02.198568",
+    "calculation_timestamp": "2026-10-15T00:57:14.634743",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
@@ -303,22 +303,6 @@
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-10-08",
-      "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-10-09",
       "weight_kg": null,
@@ -414,22 +398,27 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-10-15",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
     {
       "id": "event_1",
-      "date": "2026-10-14",
-      "name": "Planned Workout",
-      "type": "WORKOUT",
-      "planned_tss": 10,
-      "duration_hours": 0.38,
-      "duration_formatted": "23m",
-      "workout_summary": null,
-      "description": "# Description\n\nBrisk five-minute warmup walk, then do two repetitions of the following:\n\n- Jog 90 Seconds\n- Walk 90 Seconds\n- Jog 3 Minutes\n- Walk 3 Minutes\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n2x\n- Jog 90s Z2 HR\n- Walk 90s Z1 HR\n- Jog 3m Z2 HR\n- Walk 3m Z1 HR"
-    },
-    {
-      "id": "event_2",
       "date": "2026-10-16",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -440,7 +429,7 @@
       "description": "# Description\n\nBrisk five-minute warmup walk, then do two repetitions of the following:\n\n- Jog 90 Seconds\n- Walk 90 Seconds\n- Jog 3 Minutes\n- Walk 3 Minutes\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\n2x\n- Jog 90s Z2 HR\n- Walk 90s Z1 HR\n- Jog 3m Z2 HR\n- Walk 3m Z1 HR"
     },
     {
-      "id": "event_3",
+      "id": "event_2",
       "date": "2026-10-18",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -451,7 +440,7 @@
       "description": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 3 minutes\n- Walk 90 seconds\n- Jog 5 minutes\n- Walk 2.5 minutes\n- Jog 3 minutes\n- Walk 90 seconds\n- Jog 5 minutes\n\n# Steps\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 3m Z2 HR\n- Walk 90s Z1 HR\n- Jog 5m Z2 HR\n- Walk 2m 30s Z1 HR\n- Jog 3m Z2 HR\n- Walk 90s Z1 HR\n- Jog 5m Z2 HR\n"
     },
     {
-      "id": "event_4",
+      "id": "event_3",
       "date": "2026-10-20",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -462,7 +451,7 @@
       "description": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 3 minutes\n- Walk 90 seconds\n- Jog 5 minutes\n- Walk 2.5 minutes\n- Jog 3 minutes\n- Walk 90 seconds\n- Jog 5 minutes\n\n# Steps\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 3m Z2 HR\n- Walk 90s Z1 HR\n- Jog 5m Z2 HR\n- Walk 2m 30s Z1 HR\n- Jog 3m Z2 HR\n- Walk 90s Z1 HR\n- Jog 5m Z2 HR\n"
     },
     {
-      "id": "event_5",
+      "id": "event_4",
       "date": "2026-10-23",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -473,7 +462,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 3 minutes"
     },
     {
-      "id": "event_6",
+      "id": "event_5",
       "date": "2026-10-25",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -484,7 +473,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 5 minutes"
     },
     {
-      "id": "event_7",
+      "id": "event_6",
       "date": "2026-10-27",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -495,7 +484,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 8 minutes"
     },
     {
-      "id": "event_8",
+      "id": "event_7",
       "date": "2026-10-30",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -506,7 +495,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog for 20 minutes with no walking.\n# Steps"
     },
     {
-      "id": "event_9",
+      "id": "event_8",
       "date": "2026-11-01",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -517,7 +506,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 5 minutes"
     },
     {
-      "id": "event_10",
+      "id": "event_9",
       "date": "2026-11-03",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -528,7 +517,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then:\n- Jog 10 minutes"
     },
     {
-      "id": "event_11",
+      "id": "event_10",
       "date": "2026-11-06",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -539,7 +528,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
     },
     {
-      "id": "event_12",
+      "id": "event_11",
       "date": "2026-11-08",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -550,7 +539,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
     },
     {
-      "id": "event_13",
+      "id": "event_12",
       "date": "2026-11-10",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -561,7 +550,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
     },
     {
-      "id": "event_14",
+      "id": "event_13",
       "date": "2026-11-13",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -572,7 +561,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 25 minutes.\n# Steps"
     },
     {
-      "id": "event_15",
+      "id": "event_14",
       "date": "2026-11-15",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -583,7 +572,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
     },
     {
-      "id": "event_16",
+      "id": "event_15",
       "date": "2026-11-17",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -594,7 +583,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
     },
     {
-      "id": "event_17",
+      "id": "event_16",
       "date": "2026-11-20",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -605,7 +594,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
     },
     {
-      "id": "event_18",
+      "id": "event_17",
       "date": "2026-11-22",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -616,7 +605,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 30 minutes.\n# Steps"
     },
     {
-      "id": "event_19",
+      "id": "event_18",
       "date": "2026-11-24",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -628,12 +617,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 19,
+    "attempted": 18,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 19
+    "bail_no_match": 18
   },
   "weekly_summary": {
     "total_training_hours": 0.3,
