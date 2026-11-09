@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-09T11:19:52.997819",
+    "last_updated": "2026-11-09T21:34:49.481710",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -62,11 +62,11 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 5.4,
-      "atl": 8.47,
-      "tsb": -3.07,
-      "ramp_rate": 0.57,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 4.94,
+      "atl": 6.16,
+      "tsb": -1.22,
+      "ramp_rate": 0.11,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
       "eftp": null,
@@ -225,7 +225,7 @@
       "matched_days": 0,
       "planned_dates": [
         "2026-11-03",
-        "2026-11-08"
+        "2026-11-09"
       ],
       "completed_dates": []
     },
@@ -254,7 +254,7 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-09T11:19:52.997069",
+    "calculation_timestamp": "2026-11-09T21:34:49.480969",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
@@ -468,7 +468,7 @@
   "planned_workouts": [
     {
       "id": "event_1",
-      "date": "2026-11-10",
+      "date": "2026-11-09",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 20,
@@ -479,7 +479,7 @@
     },
     {
       "id": "event_2",
-      "date": "2026-11-12",
+      "date": "2026-11-11",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 20,
@@ -490,7 +490,7 @@
     },
     {
       "id": "event_3",
-      "date": "2026-11-14",
+      "date": "2026-11-13",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 20,
@@ -504,11 +504,11 @@
       "date": "2026-11-15",
       "name": "Planned Workout",
       "type": "WORKOUT",
-      "planned_tss": 22,
-      "duration_hours": 0.55,
-      "duration_formatted": "33m",
+      "planned_tss": 20,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
       "workout_summary": null,
-      "description": "# Description\n\nBrisk five-minute warmup walk, then jog 28 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 28m Z2 HR\n\n"
+      "description": "# Description\n\nBrisk five-minute warmup walk, then jog 25 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 25m Z2 HR\n\n"
     },
     {
       "id": "event_5",
@@ -523,7 +523,7 @@
     },
     {
       "id": "event_6",
-      "date": "2026-11-20",
+      "date": "2026-11-19",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 22,
@@ -534,6 +534,17 @@
     },
     {
       "id": "event_7",
+      "date": "2026-11-21",
+      "name": "Planned Workout",
+      "type": "WORKOUT",
+      "planned_tss": 22,
+      "duration_hours": 0.55,
+      "duration_formatted": "33m",
+      "workout_summary": null,
+      "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 28 minutes.\n# Steps"
+    },
+    {
+      "id": "event_8",
       "date": "2026-11-22",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -544,7 +555,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 30 minutes.\n# Steps"
     },
     {
-      "id": "event_8",
+      "id": "event_9",
       "date": "2026-11-24",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -555,7 +566,7 @@
       "description_preview": "# Description\nBrisk five-minute warmup walk, then jog 30 minutes.\n# Steps"
     },
     {
-      "id": "event_9",
+      "id": "event_10",
       "date": "2026-11-27",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -567,12 +578,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 9,
+    "attempted": 10,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 9
+    "bail_no_match": 10
   },
   "weekly_summary": {
     "total_training_hours": 0.59,
