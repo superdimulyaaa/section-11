@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-15T06:09:08.770270",
+    "last_updated": "2026-11-15T13:58:52.279437",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -47,7 +47,7 @@
       "atl": 9.61,
       "tsb": -3.55,
       "ramp_rate": 1.01,
-      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
       "eftp": null,
@@ -201,14 +201,13 @@
     },
     "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 3,
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
         "2026-11-09",
         "2026-11-11",
-        "2026-11-14",
-        "2026-11-15"
+        "2026-11-14"
       ],
       "completed_dates": []
     },
@@ -237,13 +236,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-15T06:09:08.769704",
+    "calculation_timestamp": "2026-11-15T13:58:52.278846",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
       "activities_7d": 3,
       "activities_28d": 12,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 3,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -492,7 +491,7 @@
   "planned_workouts": [
     {
       "id": "event_1",
-      "date": "2026-11-15",
+      "date": "2026-11-16",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 20,
@@ -503,7 +502,7 @@
     },
     {
       "id": "event_2",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 22,
@@ -514,7 +513,7 @@
     },
     {
       "id": "event_3",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "name": "Planned Workout",
       "type": "WORKOUT",
       "planned_tss": 22,
