@@ -14,7 +14,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-21T20:51:43.477572",
+    "last_updated": "2026-11-22T01:05:28.315033",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.6.4"
@@ -33,7 +33,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-10-19",
-    "age_days": 33,
+    "age_days": 34,
     "total_months": 30,
     "history_confidence": "high"
   },
@@ -53,10 +53,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 5.77,
-      "atl": 6.38,
-      "tsb": -0.61,
-      "ramp_rate": 0.27,
+      "ctl": 5.63,
+      "atl": 5.53,
+      "tsb": 0.1,
+      "ramp_rate": -0.43,
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
@@ -211,20 +211,22 @@
     },
     "consistency_index": 0.0,
     "consistency_details": {
-      "planned_days": 4,
+      "planned_days": 5,
       "completed_days": 0,
       "matched_days": 0,
       "planned_dates": [
         "2026-11-16",
         "2026-11-18",
         "2026-11-20",
-        "2026-11-21"
+        "2026-11-21",
+        "2026-11-22"
       ],
       "completed_dates": []
     },
-    "phase_detected": "Indeterminate",
+    "phase_detected": "Taper",
     "phase_triggers": [
-      "Insufficient data for phase detection"
+      "TSB 0.1 positive",
+      "CTL stable/declining"
     ],
     "seasonal_context": "Off-season / Transition",
     "benchmark_indoor": {
@@ -247,13 +249,13 @@
     "p_max": null,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-21T20:51:43.477014",
+    "calculation_timestamp": "2026-11-22T01:05:28.314292",
     "data_quality": {
       "hrv_data_points": 0,
       "rhr_data_points": 0,
       "activities_7d": 1,
       "activities_28d": 10,
-      "planned_workouts_7d": 4,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -304,22 +306,6 @@
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-11-15",
-      "weight_kg": null,
-      "resting_hr": null,
-      "hrv_rmssd": null,
-      "hrv_sdnn": null,
-      "sleep_hours": null,
-      "sleep_formatted": null,
-      "sleep_quality": null,
-      "sleep_score": null,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-11-16",
       "weight_kg": null,
@@ -415,22 +401,27 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-11-22",
+      "weight_kg": null,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
     {
       "id": "event_1",
-      "date": "2026-11-21",
-      "name": "Planned Workout",
-      "type": "WORKOUT",
-      "planned_tss": 22,
-      "duration_hours": 0.55,
-      "duration_formatted": "33m",
-      "workout_summary": null,
-      "description": "# Description\n\nBrisk five-minute warmup walk, then jog 28 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 28m Z2 HR\n\n"
-    },
-    {
-      "id": "event_2",
       "date": "2026-11-22",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -441,7 +432,7 @@
       "description": "# Description\n\nBrisk five-minute warmup walk, then jog 30 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 30m Z2 HR\n\n"
     },
     {
-      "id": "event_3",
+      "id": "event_2",
       "date": "2026-11-24",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -452,7 +443,7 @@
       "description": "# Description\n\nBrisk five-minute warmup walk, then jog 30 minutes.\n\n# Steps\n\nWarmup\n- Brisk Walk 5m Z1 HR\n\nWorkout \n- Jog 30m Z2 HR\n\n"
     },
     {
-      "id": "event_4",
+      "id": "event_3",
       "date": "2026-11-27",
       "name": "Planned Workout",
       "type": "WORKOUT",
@@ -464,12 +455,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 4,
+    "attempted": 3,
     "success": 0,
     "patternA": 0,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 4
+    "bail_no_match": 3
   },
   "weekly_summary": {
     "total_training_hours": 0.37,
